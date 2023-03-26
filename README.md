@@ -7,6 +7,7 @@ Jyrni Into the Unknown : Trip Planner Webapp
 - React Router
 - SCSS
 - Bootstrap
+- Material Design Icons
 - Google Fonts
 - Google Maps API
 - ChatGPT
