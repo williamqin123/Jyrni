@@ -5,13 +5,13 @@ Into the Unknown
 
 ## Dependencies
 - Google Cloud Platform
-  - Firebase (not implemented)
+  - Firebase (planned but not yet implemented)
   - Google Maps JS API
   - Google Places API
   - Google Maps Directions API
 - React-Bootstrap
 - React
 - Create React App
-- Solar Data API (not implemented)
-- Weather Forecast API (not implemented)
-- ChatGPT API (not implemented)
+- Solar Data API (planned but not yet implemented)
+- Weather Forecast API (planned but not yet implemented)
+- ChatGPT API (planned but not yet implemented)
