@@ -1,0 +1,28 @@
+
+.Snippet {
+    pointer-events: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
+    position: relative;
+    margin-bottom: 1rem;
+    transition: transform 0.1s;
+    transform: scale(1);
+    user-select: none;
+}
+
+.Snippet:hover {
+    z-index: 1;
+    transform: scale(1.05);
+    cursor: grab;
+}
+
+.Snippet img {
+    height: 100%;
+    position: absolute;
+}
+
+.map-snippet-float-layer .Snippet img {
+    transform: translateX(-100%);
+}

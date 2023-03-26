@@ -1,0 +1,41 @@
+
+.Map {
+    text-shadow: 0 0 1rem black;
+}
+
+.Map, .google-map {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.sidebar-list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50vh;
+    padding: 1rem 1rem 0 0;
+    overflow-y: auto;
+    background: linear-gradient(to left, #00000080, transparent);
+    /*pointer-events: none;*/
+}
+
+.map-header {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 50vh;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+
+    background: linear-gradient(to bottom right, #00000080, transparent 5rem);
+}
+
+.map-snippet-float-layer {
+    z-index: 50;
+    position: absolute;
+}

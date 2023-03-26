@@ -1,0 +1,80 @@
+
+.Day {
+    height: calc(100% - 3rem);
+    background: linear-gradient(to bottom, #222 0%, #222 50%,black 50%,black 100%);
+    background-size: 100% 11.11%;
+    width: 15rem;
+    padding: 0 0.5rem;
+    border-radius: 1rem;
+    margin: 3rem 0.5rem 0 0.5rem;
+    position: relative;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    user-select: none;
+}
+
+.Day::before {
+    content:attr(date);
+    position: absolute;
+    text-align: center;
+    top: -3rem;
+    font-size: 1.5rem;
+    left: 0;
+    right: 0;
+}
+
+.overnight-blob {
+    background-color: black;
+    width: 3rem;
+    height: 5rem;
+    margin: 0 0.5rem;
+    background-size: cover;
+    background-position: center center;
+}
+
+.Day, .overnight-blob {
+    border-radius: 1rem;
+    border: 1px solid darkslategray;
+}
+
+.sun-indicator {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-top: 2px solid orange;
+    color: yellow;
+    line-height: 1;
+    pointer-events: none;
+}
+
+.calendar-block {
+    position: absolute;
+    left: 2.5rem;
+    right: 2.5rem;
+    background: #0f07;
+    border-radius: 0.5rem;
+    border: 1px solid lime;
+    padding: 0.5rem;
+    overflow: hidden;
+}
+
+.calendar-block * {
+    line-height: 0.75;
+    margin: 0;
+    pointer-events: none;
+}
+
+.travel-time-notice {
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%) scaleX(0.75);
+    position: absolute;
+    color: lawngreen;
+    line-height: 0.75;
+}

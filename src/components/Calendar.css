@@ -1,0 +1,23 @@
+
+.Calendar {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    height: 100%;
+}
+
+.schedule {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex-grow: 1;
+    margin-bottom: 1rem;
+}
+
+.trip-dates {
+    width: 50%;
+    margin: 0;
+}
