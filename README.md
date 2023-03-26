@@ -5,6 +5,7 @@ Into the Unknown
 
 ## Dependencies
 - Google Cloud Platform
+  - Firebase (not implemented)
   - Google Maps JS API
   - Google Places API
   - Google Maps Directions API
