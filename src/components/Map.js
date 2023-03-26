@@ -119,7 +119,7 @@ class Map extends React.Component {
         super();
 
         this.state = {
-            showPlacesTypes : ['lodging','restaurants','shopping','fun'], // fun,sightseeing,historical,restaurants,shopping,hotels
+            showPlacesTypes : ['lodging','restaurant','store','museum'], // fun,sightseeing,historical,restaurants,shopping,hotels
             savedPlaces : [], // list of place objects
             markers : [],
             hovering : null,
@@ -129,6 +129,11 @@ class Map extends React.Component {
 
         this.MARKER_PATH =
         "https://developers.google.com/maps/documentation/javascript/images/marker_green";
+        this.COLORS_CODES = {
+            'lodging':'green',
+            'restaurants':'red',
+            'store':'purple',
+        };
         this.hostnameRegexp = new RegExp("^https?://.+?/");
         this.countries = {
         au: {
@@ -176,8 +181,8 @@ class Map extends React.Component {
             zoom: 6,
         },
         us: {
-            center: { lat: 37.1, lng: -95.7 },
-            zoom: 3,
+            center: { lat: 40, lng: -95 },
+            zoom: 5,
         },
         uk: {
             center: { lat: 54.8, lng: -4.6 },
@@ -236,7 +241,13 @@ class Map extends React.Component {
                 <div className='google-map' onMouseMove={(e) => this.updateMousePos(e)}></div>
                 <aside className="sidebar-list" key={this.state.savedPlaces}>
                     <Catalog title='Saved Places' items={this.state.savedPlaces}/>
-                    <Catalog title='🤖 Suggestions' items={[]}/>
+                    <Catalog title='🤖 Suggestions' items={this.state.markers.slice(-4,-1).map(m => {
+                        
+                        this.addPlaceDetails(m,() => {
+                            this.setState({});
+                        });
+                        return m.placeResult;
+                    })}/>
                 </aside>
             </div>
         );

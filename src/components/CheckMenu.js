@@ -6,7 +6,7 @@ import DropdownButton from 'react-bootstrap/DropdownButton';
 
 function CheckMenu() {
   return (
-    <DropdownButton id="dropdown-basic-button" title="Show Places" className='shadow' size='lg'>
+    <DropdownButton id="dropdown-basic-button" title="Filters" className='shadow' size='lg'>
       <Dropdown.Item href="#/action-1">Hotels</Dropdown.Item>
       <Dropdown.Item href="#/action-2">Restaurants</Dropdown.Item>
       <Dropdown.Item href="#/action-3">Shopping</Dropdown.Item>

@@ -1,10 +1,10 @@
 
 .Day {
     height: calc(100% - 3rem);
-    background: linear-gradient(to bottom, #222 0%, #222 50%,black 50%,black 100%);
+    background: linear-gradient(to bottom, #555 1%,#222 1%, #222 49%, #555 49%, #555 51%, #111 51%,#111 99%,#555 99%);
     background-size: 100% 11.11%;
     width: 15rem;
-    padding: 0 0.5rem;
+    padding: 0 0.5rem 0 1rem;
     border-radius: 1rem;
     margin: 3rem 0.5rem 0 0.5rem;
     position: relative;
@@ -16,6 +16,8 @@
     align-items: flex-start;
 
     user-select: none;
+
+    /*overflow: hidden;*/
 }
 
 .Day::before {
@@ -26,6 +28,17 @@
     font-size: 1.5rem;
     left: 0;
     right: 0;
+}
+
+.Day::after {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0.5rem;
+    background: linear-gradient(to bottom, #fff8, #08f8, #fff8);
+    border-radius: 0.5rem 0.25rem 0.25rem 0.5rem;
 }
 
 .overnight-blob {
@@ -47,7 +60,7 @@
     left: 0;
     right: 0;
     text-align: center;
-    border-top: 2px solid orange;
+    border-top: 1px solid orange;
     color: yellow;
     line-height: 1;
     pointer-events: none;
