@@ -14,3 +14,4 @@ Into the Unknown
 - Create React App
 - Solar Data API (not implemented)
 - Weather Forecast API (not implemented)
+- ChatGPT API (not implemented)
