@@ -1,7 +1,7 @@
 
 # Jyrni · Adventure Planner
 
-**Into the Unknown**
+**Jyrni Into the Unknown**
 
 ## Dependencies
 - Google Cloud Platform
