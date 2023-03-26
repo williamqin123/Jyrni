@@ -26,6 +26,7 @@ Searches for and displays nearby points of interest and places to visit. The use
 - My teammate had to leave the hackathon and wasn't able to develop for the majority of the duration. Because of this, I had to drop some of the best features that we planned to add.
 
 ## What's next for Jyrni
+- Lively, Fluid, Vivid **Animations —** planning a vacation should look just as fun as the trip is!
 - Real weather API data as opposed to the mock data in the demo
 - Better UI
 - Functioning backend and user account system with Firebase Cloud Store
